@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Updated to cold glacial blue theme for startup */
+    --background: 210 20% 6%; /* Deep dark blue-black */
+    --foreground: 210 15% 95%; /* Light blue-white */
+
+    --muted: 220 15% 12%; /* Dark blue-gray */
+    --muted-foreground: 210 15% 95% / 0.7; /* Light blue-white with opacity */
+    --muted-foreground-light: 210 15% 95% / 0.5;
+    --muted-foreground-dark: 210 15% 95% / 0.6;
+
+    --card: 220 20% 98% / 0.01;
+    --card-foreground: 210 15% 95%;
+
+    --popover: 210 20% 6%;
+    --popover-foreground: 210 15% 95%;
+
+    /* Primary colors changed to glacial blue */
+    --primary: 200 100% 70%; /* Bright glacial blue */
+    --primary-foreground: 210 20% 8%;
+    --primary-dark: 200 100% 60%; /* Darker glacial blue */
+    --primary-light: 200 50% 85%; /* Light glacial blue */
+
+    /* Secondary colors updated */
+    --secondary: 210 15% 95%;
+    --secondary-foreground: 210 20% 8%;
+
+    --accent: 220 15% 20%;
+    --accent-foreground: 210 15% 95%;
+
+    --border: 200 100% 100% / 0.08;
+    --border-light: 210 20% 6% / 0.1;
+    --border-dark: 210 20% 6% / 0.05;
+
+    --ring: 200 100% 70%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
